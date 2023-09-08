@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <title>Basic HTML ejs template</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <ul>
+      <% students.forEach(student => { %>
+      <li><%= student.name %></li>
+      <% }) %>
+    </ul>
+    <p><%= message %></p>
+  </body>
+</html>
