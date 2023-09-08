@@ -1,0 +1,12 @@
+{
+  "overrides": [
+    {
+      "files": "*.ejs",
+      "options": {
+        "parser": "html",
+        "singleQuote": true,
+        "semi": false
+      }
+    }
+  ]
+}
