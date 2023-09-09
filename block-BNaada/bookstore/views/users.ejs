@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <title>Users Basic HTML</title>
+  </head>
+  <body>
+    <h1>Welcome to List of Users Page</h1>
+    <form action="/users"></form>
+    <ul>
+      <% allUsersArray.forEach(user => { %>
+      <li><%= user.uname %></li>
+      <li><%= user.uage %></li>
+      <li><%= user.uemail %></li>
+
+      <a href="/<%= user._id %>">View single User Data</a>
+      <% }) %>
+    </ul>
+  </body>
+</html>
