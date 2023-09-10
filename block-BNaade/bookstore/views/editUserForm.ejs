@@ -1,0 +1,47 @@
+<!-- Esentially, this page is same as userForm. Just that, the form here will be reading from action='/users/:id' instead of '/users/new' which we used in userForm for create-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <title>Users Basic HTML</title>
+  </head>
+  <body>
+    <h1>Edit this user and store in DB</h1>
+    <form action="/users/<%= oneUser._id %>" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="uname"
+          placeholder="Enter your Name"
+          value="<%= oneUser.uname %>"
+        />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="uage"
+          placeholder="Enter your Age"
+          value="<%= oneUser.uage %>"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="uemail"
+          placeholder="Enter your Email"
+          value="<%= oneUser.uemail %>"
+        />
+      </div>
+      <div>
+        <input type="submit" value="Edit User" />
+      </div>
+    </form>
+  </body>
+</html>
