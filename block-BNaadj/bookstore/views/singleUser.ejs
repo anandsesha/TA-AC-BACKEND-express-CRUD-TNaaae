@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/singleUser.css" />
+
+    <title>Users Basic HTML</title>
+  </head>
+  <body>
+    <h1>Welcome to Single Users Info Page</h1>
+    <h3><%= singleUserObj.uname %></h3>
+    <h4><%= singleUserObj.uage %></h4>
+    <h5><%= singleUserObj.uemail %></h5>
+    <h5><%= singleUserObj.ubio %></h5>
+    <a href="/users/<%= singleUserObj._id %>/edit">
+      <button>Edit this User</button>
+    </a>
+    <a href="/users/<%= singleUserObj._id %>/delete">
+      <button>Delete this User</button>
+    </a>
+    <a href="/users">
+      <button>Back to Users List</button>
+    </a>
+  </body>
+</html>
