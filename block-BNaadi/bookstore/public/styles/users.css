@@ -1,0 +1,65 @@
+/* Reset some default browser styles */
+body,
+h1,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and font family */
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the page header */
+h1 {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the user list container */
+ul {
+  list-style-type: none;
+  margin: 20px auto;
+  padding: 10px;
+  width: 80%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style each list item */
+li {
+  margin-bottom: 10px;
+}
+
+/* Style the link to view single user data */
+a {
+  display: inline-block;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+a:hover {
+  background-color: #005fa3;
+}
+
+/* Add some spacing to the form (though it's currently empty) */
+form {
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.user-container {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
