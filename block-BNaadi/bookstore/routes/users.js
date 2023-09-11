@@ -63,6 +63,26 @@ router.post('/:id', async (req, res, next) => {
   }
 });
 
+// Handle PUT request to update a single user
+router.put('/:id', async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    // You can use the findByIdAndUpdate method to update the user
+    const updatedUser = await User.findByIdAndUpdate(id, req.body, {
+      new: true,
+    });
+
+    if (!updatedUser) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    // Respond with the updated user as JSON
+    res.status(200).json(updatedUser);
+  } catch (err) {
+    next('update using PUT failed');
+  }
+});
+
 /* ---------- Delete user via <a> button -------------*/
 router.get('/:id/delete', async (req, res, next) => {
   try {
