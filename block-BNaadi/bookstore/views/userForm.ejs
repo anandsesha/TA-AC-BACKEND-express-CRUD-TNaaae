@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1.0, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/styles/style.css" />
+
+    <title>Users Basic HTML</title>
+  </head>
+  <body>
+    <h1>Form to enter new user into DB :-</h1>
+    <form action="/users" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="uname"
+          placeholder="Enter your Name"
+        />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="uage"
+          placeholder="Enter your Age"
+        />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="uemail"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div>
+        <label for="bio">Bio:</label>
+        <textarea name="ubio" id="bio" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <input type="submit" value="Add User" />
+      </div>
+    </form>
+  </body>
+</html>
